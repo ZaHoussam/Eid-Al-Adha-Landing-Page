@@ -1,0 +1,293 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800&display=swap");
+
+/* * Add Colors */
+:root {
+  --primary-color: #ffc797;
+  --bg-color: #111929;
+  --light-color: #fafafa;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body{
+  position: relative;
+  z-index: -10;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--bg-color);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+}
+
+/* * Borders Start */
+
+.borders img {
+  position: absolute;
+  width: 100px;
+}
+
+.borders .border-1 {
+  left: 0;
+  top: 0;
+}
+.borders .border-2 {
+  left: 0;
+  bottom: 0;
+  transform: rotate(-90deg);
+}
+.borders .border-3 {
+  right: 0;
+  bottom: 0;
+  transform: rotate(180deg);
+}
+/* * Borders End */
+/* * Lanterns Start */
+.lanterns img {
+  position: absolute;
+  top: 0;
+  width: 100px;
+}
+
+.lanterns .lantern-1 {
+  right: 150px;
+}
+
+.lanterns .lantern-2 {
+  width: 140px;
+  right: 60px;
+}
+
+.lanterns .lantern-3 {
+  right: 0;
+}
+/* * Lanterns End */
+/* * Content Start */
+.content {
+  width: 90%;
+  height: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content .left,
+.content .right {
+  flex-basis: 50%;
+  height: 100%;
+}
+
+/* ^ Content ====> Left */
+.content .left {
+  position: relative;
+}
+
+.content .left::before {
+  content: "";
+  position: absolute;
+  background-image: url(./images/Mosque.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 500px;
+  height: 500px;
+  left: 50%;
+  top: 60%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.content .left .cloud {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.content .left .moon {
+  width: 550px;
+  position: relative;
+  z-index: 1;
+}
+
+.content .left .goat {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  transform: translate(-77%, -10%);
+}
+
+.content .left .cow {
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  top: 50%;
+  transform: translate(-17%, -50%);
+  width: 400px;
+}
+
+/* ^ Content ====> Right */
+
+@font-face {
+  font-family: Malyska;
+  src: url(./Font/Malyska.ttf);
+}
+
+.content .right .title {
+  font-family: Malyska;
+  user-select: none;
+  color: var(--primary-color);
+  font-size: 12rem;
+  text-transform: capitalize;
+  padding-left: 100px;
+  height: 350px;
+  position: relative;
+}
+
+.content .right .title::after {
+  content: "al-adha";
+  position: absolute;
+  font-size: 5rem;
+  color: var(--light-color);
+  right: 0;
+  bottom: 0;
+  width: 400px;
+}
+
+.content .right .paragraph {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--light-color);
+  font-size: 0.9rem;
+  line-height: 1.8;
+  text-align: center;
+}
+
+.content .right .btn {
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding: 10px 15px;
+  border-radius: 30px;
+  width: 150px;
+  font-size: 1rem;
+  text-transform: capitalize;
+  font-weight: 600;
+  background-color: var(--light-color);
+  color: var(--bg-color);
+  border: 1px solid var(--light-color);
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.content .right .btn:hover {
+  color: var(--primary-color);
+  background-color: var(--bg-color);
+  border-color: var(--primary-color);
+}
+
+/* * Content End */
+/* * Sky Start */
+/* ^ Sky ====> Stars */
+.sky .stars span,
+.sky .stars span::before,
+.sky .stars span::after {
+  position: absolute;
+  display: block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: var(--light-color);
+  box-shadow: 0 0 10px var(--light-color);
+}
+
+.sky .stars span::before,
+.sky .stars span::after {
+  content: "";
+}
+
+.sky .stars .star-1 {
+  top: 100px;
+  left: 100px;
+}
+
+.sky .stars .star-2 {
+  top: 130px;
+  right: 300px;
+}
+
+.sky .stars .star-3 {
+  top: 200px;
+  left: 400px;
+}
+
+.sky .stars .star-4 {
+  top: 150px;
+  right: 500px;
+}
+
+.sky .stars .star-5 {
+  top: 100px;
+  left: 500px;
+}
+
+.sky .stars .star-6 {
+  top: 200px;
+  left: 800px;
+}
+
+.sky .stars .star-7 {
+  top: 250px;
+  right: 250px;
+}
+
+.sky .stars .star-8 {
+  top: 300px;
+  left: 550px;
+}
+
+.sky .stars .star-9 {
+  top: 400px;
+  left: 500px;
+}
+
+.sky .stars .star-10 {
+  top: 90px;
+  left: 750px;
+}
+
+/* ^ Sky ====> Clouds */
+.sky .clouds img {
+  position: absolute;
+  width: 300px;
+  z-index: -1;
+}
+
+.sky .clouds .cloud-1{
+  left: 100px;
+  top: 50px;
+}
+
+.sky .clouds .cloud-2{
+  right: 200px;
+  top: 100px;
+}
+
+.sky .clouds .cloud-3{
+  left: 600px;
+  top: 70px;
+}
+/* * Sky End */
