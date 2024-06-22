@@ -8,4 +8,4 @@
 ![Thumblain-Third-Video](https://github.com/ZaHoussam/Eid-Al-Adha-Landing-Page/assets/89077423/6be9ab51-7bc7-4ca8-92c5-a0051fb424d1)
 
 ###### Link to this Template:
-https://zahoussam.github.io/Delivery_Site/
+[https://zahoussam.github.io/Delivery_Site/](https://zahoussam.github.io/Eid-Al-Adha-Landing-Page/)
